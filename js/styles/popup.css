@@ -1,0 +1,73 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 200000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.popup__content {
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  padding-top: 10px;
+  background-color: #20242f;
+  font-family: "Roboto",Arial,sans-serif;
+  color: #fff;
+  border-radius: 20px;
+}
+.popup__close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.popup__close:hover{
+  background-color: #ff6f22;
+}
+.popup__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.popup__subtitle {
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+.popup__teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.popup__team {
+  min-height: 90px;
+}
+.popup__team img {
+  border-radius: 10px;
+}
+.popup__score {
+  font-weight: bold;
+  font-size: 44px;
+}
+.popup__date {
+  font-size: 14px;
+  font-weight: bold;
+}
