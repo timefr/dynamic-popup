@@ -1,0 +1,24 @@
+<div class="popup">
+  <div class="popup__content">
+    <h1 class="popup__title">
+      Dota 2
+      <br>
+      <slot name="team1"></slot> vs <slot name="team2"></slot>
+    </h1>
+    <h2 class="popup__subtitle">International 2022</h2>
+    <div class="popup__teams">
+      <div class="popup__team">
+        <slot name="teamImage1"></slot>
+      </div>
+      <div class="popup__score">
+        <slot name="score"></slot>
+      </div>
+      <div class="popup__team">
+        <slot name="teamImage2"></slot>
+      </div>
+    </div>
+    <div class="popup__date">
+      <slot name="date"></slot>
+    </div>
+  </div>
+</div>
